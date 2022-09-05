@@ -143,7 +143,7 @@ return [
         // 'store'  => 'redis',
     ],
 
-    'githun_api' => env('GITHUB_API','https://api.github.com/search/repositories'),
+    'github_api' => env('GITHUB_API','https://api.github.com/search/repositories'),
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers

@@ -43,7 +43,7 @@ class UpdateTopProgrammingListCommand extends Command
             $stack->push($this->interceptResponse($language));
 
             $client = new Client();
-            $client->get('https://api.github.com/search/repositories', [
+            $client->get(config('app.github_api'), [
                 'max_retry_attempts' => 5,
                 'retry_on_status'    => [503,429,404,500],
                 'max_allowable_timeout_secs'=>30,
